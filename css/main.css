@@ -1,0 +1,38 @@
+
+:root {
+    --orange: #F2C14E;
+    --winning-blocks:#2f2f2f;
+}
+body {
+    color: var(--orange);
+    font-family: 'Finger Paint', cursive;
+}
+.game-container {
+    background-color: #37505C;
+}
+#gameboard {
+    width: 300px;
+}
+.box {
+    height: 100px;
+    width: 100px;
+    color: var(--orange);
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+}
+.box:nth-child(3n) {
+    border-right: none;
+}
+.box:nth-child(6) ~ .box {
+    border-bottom: none;
+} 
+button {
+    background-color: var(--orange);
+    color: #333;
+    border-color: var(--orange);
+    transition: 200ms transform;
+}
+button:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
+}
